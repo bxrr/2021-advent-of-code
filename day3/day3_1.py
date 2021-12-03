@@ -4,8 +4,6 @@ for line in f:
     lines.append(line.replace("\n", ""))
 f.close()
 
-print(len(lines[0]))
-
 count_0 = [0] * len(lines[0])
 count_1 = [0] * len(lines[0])
 
