@@ -1,15 +1,15 @@
-def peek_line(f):
-    pos = f.tell()
-    line = f.readline()
-    f.seek(pos)
-    return line
-
 f = open("input", "r")
-line_len = len(peek_line(f).replace("\n", ""))
-count_0 = [0] * line_len
-count_1 = [0] * line_len
-
+lines = []
 for line in f:
+    lines.append(line.replace("\n", ""))
+f.close()
+
+print(len(lines[0]))
+
+count_0 = [0] * len(lines[0])
+count_1 = [0] * len(lines[0])
+
+for line in lines:
     for i in range(len(line)-1):
         if line[i] == "0":
             count_0[i] += 1
@@ -18,7 +18,7 @@ for line in f:
 
 gamma = ""
 epsilon = ""
-for i in range(line_len):
+for i in range(len(lines[0])):
     if count_0[i] > count_1[i]:
         gamma += "0"
         epsilon += "1"
