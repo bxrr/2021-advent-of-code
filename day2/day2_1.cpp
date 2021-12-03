@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include "globals.hpp"
+#include "../globals.hpp"
 using namespace std;
 using namespace glb;
 
