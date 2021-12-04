@@ -41,4 +41,7 @@ int main(void)
 
     cout << "h: " << hor_pos << " : v: " <<  ver_pos << endl;
     cout << hor_pos * ver_pos << endl;
+
+    string str = "boomboomboom";
+    cout << replace_str(str, "boom", "lamo") << endl;
 }

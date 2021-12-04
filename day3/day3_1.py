@@ -8,7 +8,7 @@ count_0 = [0] * len(lines[0])
 count_1 = [0] * len(lines[0])
 
 for line in lines:
-    for i in range(len(line)-1):
+    for i in range(len(line)):
         if line[i] == "0":
             count_0[i] += 1
         else:

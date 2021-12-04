@@ -1,7 +1,7 @@
 f = open("input", "r")
 
 count = 0
-num = 999999
+num = 99999999
 for line in f:
     last_num = num
     num = int(line)
