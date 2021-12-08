@@ -1,5 +1,5 @@
-#ifndef __GLOBALS_H__
-#define __GLOBALS_H__
+#ifndef __LIB_H__
+#define __LIB_H__
 
 #include <string>
 #include <iostream>
@@ -63,8 +63,9 @@ namespace glb
 
         for(int i = 0; i < str.length()-replace.length()+1; i++)
         {
-            std::string last_non_repl = tempstr;
             std::string tempstr = str.substr(i, replace.length());
+            std::string last_non_repl = tempstr;
+
             if(tempstr == replace)
             {
                 new_str += replace_with;

@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include "../globals.hpp"
+#include "../lib.hpp"
 using namespace std;
 using namespace glb;
 
@@ -11,8 +11,8 @@ int main(void)
     ifstream f;
     f.open("input");
     
-    string line;
     vector<string> lines;
+    string line;
     while(getline(f, line))
     {
         lines.push_back(replace_char(line, '\n', ""));

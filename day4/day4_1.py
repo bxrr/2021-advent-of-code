@@ -64,6 +64,7 @@ def check_board(board, num_list):
 
     return [board.copy(), min(row_bingo, col_bingo)]
 
+print(boards)
 fastest = [0, 99999]
 for i in range(len(boards)):
     temp = check_board(boards[i], nums)
