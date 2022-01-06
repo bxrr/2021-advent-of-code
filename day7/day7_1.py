@@ -3,7 +3,7 @@ nums = []
 nums = f.read().replace("\n", "").split(",")
 for i in range(len(nums)):
     nums[i] = int(nums[i])
-
+    
 diffs = []
 for i in range(len(nums)):
     diff = 0
@@ -12,5 +12,4 @@ for i in range(len(nums)):
         diff += abs(find_num - num)
     diffs.append(diff)
 
-print(diffs)
 print(min(diffs))
